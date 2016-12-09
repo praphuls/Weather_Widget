@@ -1,0 +1,26 @@
+<section class="widget-cotainer">
+    <section class="widget-box">
+        <section class="widget">
+        <aside class="widget-reload-icon"></aside>
+        <div class="widget-location">{{location}}</div>
+        <div class="widget-temprature">
+            <span class="widget-temprature-number">{{temp}}</span>
+            <span class="widget-temprature-degree">&deg;</span>
+            <span class="widget-temprature-graphic">
+                <figure>
+                  <img src={{weatherImg}} alt={{weatherDesc}} height="55">
+                  <figcaption>{{weatherDesc}}</figcaption>
+                </figure>
+            </span>
+        </div><!-- widget-temprature -->
+        <div class="widget-days">
+            {{#each forecast}}
+                <div class="widget-day">
+                    <span class="widget-day-name">{{day}}</span>
+                    <span class="widget-day-temprature">{{high}}&deg; / {{low}}&deg;</span>
+                </div><!-- widget-days -->
+            {{/each}}
+        </div><!-- widget-day -->
+        </section><!-- widget -->
+    </section><!-- widget-box -->
+</section><!-- widget-cotainer -->

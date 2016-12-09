@@ -1,0 +1,109 @@
+body,html {
+	font-family: arial;
+	height: 100%;
+	margin:0
+}
+.widget-cotainer{
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.widget-box{
+	display: table-cell;
+	height: 200px;
+	vertical-align: middle;
+}
+.widget{
+	background: #fff;
+	border: 1px solid #a2a0a2;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 0 #666;
+	box-sizing: border-box;
+	height: 200px;
+	margin: auto;
+	padding: 10px;
+	position: relative;
+	width: 380px
+}
+
+.widget-reload-icon {
+	cursor: pointer;
+	height: 2em;
+	padding: .25em;
+	position: absolute;
+	right: 0;
+	width: 2em;
+}
+.widget-reload-icon.refresh {
+	-webkit-animation: rotate 0.1s linear;
+  	animation: rotate 0.1s linear;
+}
+.widget-reload-icon:before, .widget-reload-icon:after {
+	content: '';
+	display: block;
+}
+.widget-reload-icon:before {
+	border-color: transparent #2196F3 #2196F3 #2196F3;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: .125em;
+	height: 1.5em;
+	width: 1.5em;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.widget-reload-icon:after {
+	border-color: transparent transparent transparent #2196F3;
+	border-style: solid;
+	border-width: .3125em 0 .3125em .5em;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+}
+.widget-location{
+	font-size: 26px;
+}
+.widget-temprature > *{
+	display: inline-block;
+	vertical-align: middle
+}
+.widget-temprature-number,.widget-temprature-degree{
+	font-size: 80px;
+}
+.widget-temprature-graphic{
+    box-sizing: border-box;
+    font-size: 12px;
+    height: 70px;
+    text-align: center;
+}
+.widget-temprature-graphic figure{
+    margin: auto;
+}
+.widget-days{
+	display: table;
+	width: 100%
+}
+.widget-day{
+	border-right: 1px dotted #ccc;
+	display: table-cell;
+	padding: 10px;
+	text-align: center
+}
+.widget-day:last-child{
+	border-right: 0
+}
+.widget-day-name{
+	display: block;
+	font-size: 15px
+}
+.widget-day-temprature{
+	font-size: 12px
+}
+@-webkit-keyframes rotate {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
